@@ -1,6 +1,6 @@
 # Desafio da (NLW) Next Level Week
 
-![preview](/assets/Opera%20Instant%C3%A2neo_2022-09-21_004219_index.html.png)
+![preview](./assets/Opera%20Instant%C3%A2neo_2022-09-21_004219_index.html.png)
 
 > Trilha Explorer
 
