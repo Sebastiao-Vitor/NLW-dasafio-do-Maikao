@@ -6,7 +6,7 @@
 
 Projeto proposto no final da NLW da Trilha Explorer. Desafio dado é desafio cumprido.
 
-[ 🔗 Clique aqui para acessar] ()
+[ 🔗 Clique aqui para acessar] (https://sebastiao-vitor.github.io/NLW-dasafio-do-Maikao/)
 
 ## 🧰🛠️ Tecnologias 
 
