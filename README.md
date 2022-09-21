@@ -30,7 +30,7 @@ Projeto proposto no final da NLW da Trilha Explorer. Desafio dado é desafio cum
 
 NLW finalizada com muito esforço e trabalho duro, me dediquei ao máximo para entregar um projeto satisfatória para mim, sei que posso melhorar bastante esse projeto porem me falta o conhecimento e para isso sigo focado e disciplinado para aprender mais e mais desse mundo da programação.
 
-Muito obg @Rocketsear pela experiência incrível que eu tive nessa curta semana que levarei para minha carreira.
+Muito obg @Rocketseat pela experiência incrível que eu tive nessa curta semana que levarei para minha carreira.
 
 # 🚀 Next Level Unlocked 🚀
 
