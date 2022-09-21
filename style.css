@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ff-body: 'Montserrat', sans-serif;
+   
+  --bg-color: hsla(240, 5%, 7%, 1);
+  --bg-color-secondary: hsla(240, 5%, 16%, 1);
+  --fc-body-primary: hsla(0, 0%, 100%, 1);
+  --fc-body-secondary: hsla(0, 0%, 76%, 1);
+
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  background-image: url(./background/stars.svg);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color);
+}
+
+body * {
+  font-family: var(--ff-body);
+  line-height: 160%;
+}
+
+.page {
+  max-width: 840px;
+  margin: auto;
+}
+
+header {
+  min-width: 34rem;
+  height: 15.2rem;
+  padding-top: 3.2rem;
+}
+
+header div {
+  width: 12rem;
+  margin: auto;
+  background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+ 
+  border-radius: 50%;
+
+  display: flex;
+  padding: 0.4rem;
+
+  transition:  transform .3s;
+}
+
+header div:hover {
+  transform: scale(1.2);
+}
+
+header div img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main {
+  min-width: 34rem;
+  width: 90%;
+  margin: 3.2rem auto;
+
+  display: grid;
+  gap: 2.4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding-top: .4rem;
+  
+  background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+  border-radius: .8rem;
+}
+
+section div {
+  background-color: var(--bg-color-secondary);
+  padding: 2.4rem 3.2rem 3.2rem;
+  border-radius: .8rem;
+}
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap:  1.6rem;
+}
+
+section ul li{
+  transition: transform .3s;
+  display: flex;
+}
+
+section .anime-list li:hover, .manga-list li:hover {
+  transform: scale(1.4);
+  filter: brightness(1.2);
+  background-image: linear-gradient(90deg, #c402ff 0%, #0caa90 100%);
+  border: 1px;
+  border-radius: 10px;
+  padding: 1px;
+  filter:contrast(1.1);
+}
+
+section .network li {
+  transition: transform .4s;
+}
+
+section .network li:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  background-image: linear-gradient(90deg, #7700ff 0%, #e62750 100%);
+  border: 1px;
+  border-radius: 25%;
+  padding: 1px;
+}
+
+section h2 {
+  color: var(--fc-body-primary);
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+
+section p {
+  color: var(--fc-body-secondary);
+  margin-bottom: 2.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  letter-spacing: -0.18px;
+}
+
+.anime-list img,
+.manga-list img {
+  height: 15rem;
+  width: 10rem;
+  border: 1px solid #555555;
+  border-radius: .8rem;
+}
+
+.face svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+  @media (max-width: 480px) {
+    section ul {
+      justify-content: center;
+    }
+
+
+  }
+
+  header div {
+    animation: topdawn .6s .1s backwards;
+  }
+
+  main section {
+    animation: dawnup .9s backwards;
+  }
+
+  main section:nth-child(1) {
+    animation-delay: .1s;
+  }
+  main section:nth-child(2) {
+    animation-delay: .4s;
+  }
+  main section:nth-child(3) {
+    animation-delay: .6s;
+  }
+
+  main ul li {
+    animation: rightleft .4s backwards;
+  }
+
+  main ul li:nth-child(1) {
+    animation-delay: .2s;
+  }
+  main ul li:nth-child(2) {
+    animation-delay: .4s;
+  }
+  main ul li:nth-child(3) {
+    animation-delay: .6s;
+  }
+  main ul li:nth-child(4) {
+    animation-delay: .8s;
+  }
+  main ul li:nth-child(5) {
+    animation-delay: 1s;
+  }
+
+  @keyframes topdawn {
+    from {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes dawnup {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes rightleft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
